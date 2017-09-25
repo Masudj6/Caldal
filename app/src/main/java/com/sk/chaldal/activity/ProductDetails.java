@@ -24,9 +24,9 @@ public class ProductDetails extends AppCompatActivity {
     }
 
     private void initView(String data,int image) {
-        tv_productDetails = (TextView) findViewById(R.id.tv_productDetails);
+        tv_productDetails = (TextView) findViewById(R.id.p);
         tv_productDetails.setText(data);
-        iv_productImage= (ImageView) findViewById(R.id.iv_productImage);
+        iv_productImage= (ImageView) findViewById(R.id.i);
         iv_productImage.setImageResource(image);
 
     }

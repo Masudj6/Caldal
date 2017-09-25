@@ -1,5 +1,6 @@
 package com.sk.chaldal.activity;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         init(toolbar);
+
     }
 
     private void init(Toolbar toolbar) {
@@ -207,15 +209,39 @@ public class MainActivity extends AppCompatActivity {
     private void getData() {
         Log.e(TAG, "getData: in mainactivity called" );
         Product product = new Product();
-        product = new Product("sugar(This is sugar...", "12", "$441", R.drawable.suger);
+        product = new Product("sugar(This is sugar...", "12kg", "$441", R.drawable.suger);
         productArrayList.add(product);
-        product = new Product("moyda(It is moyda...", "12", "$442", R.drawable.a2);
+        product = new Product("moyda(It is moyda...", "12kg", "$442", R.drawable.a2);
         productArrayList.add(product);
-        product = new Product("sugi(It is suji...", "12", "$443", R.drawable.suji);
+        product = new Product("sugi(It is suji...", "12kg", "$443", R.drawable.suji);
         productArrayList.add(product);
-        product = new Product("Onion(This is onion", "12", "$444", R.drawable.onion);
+        product = new Product("Onion(This is onion", "12kg", "$444", R.drawable.onion);
         productArrayList.add(product);
-        product = new Product("Toilet Tishu", "12", "$445", R.drawable.tisu);
+        product = new Product("Toilet Tishu", "2kg", "$445", R.drawable.tisu);
+        productArrayList.add(product);
+
+        product = new Product();
+        product = new Product("sugar(This is sugar...", "12kg", "$441", R.drawable.suger);
+        productArrayList.add(product);
+        product = new Product("moyda(It is moyda...", "12kg", "$442", R.drawable.a2);
+        productArrayList.add(product);
+        product = new Product("sugi(It is suji...", "12kg", "$443", R.drawable.suji);
+        productArrayList.add(product);
+        product = new Product("Onion(This is onion", "12kg", "$444", R.drawable.onion);
+        productArrayList.add(product);
+        product = new Product("Toilet Tishu", "2kg", "$445", R.drawable.tisu);
+        productArrayList.add(product);
+
+        product = new Product();
+        product = new Product("sugar(This is sugar...", "12kg", "$441", R.drawable.suger);
+        productArrayList.add(product);
+        product = new Product("moyda(It is moyda...", "12kg", "$442", R.drawable.a2);
+        productArrayList.add(product);
+        product = new Product("sugi(It is suji...", "12kg", "$443", R.drawable.suji);
+        productArrayList.add(product);
+        product = new Product("Onion(This is onion", "12kg", "$444", R.drawable.onion);
+        productArrayList.add(product);
+        product = new Product("Toilet Tishu", "2kg", "$445", R.drawable.tisu);
         productArrayList.add(product);
 
         Log.e(TAG, "getData: "+productArrayList.size()+" data available" );
