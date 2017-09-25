@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ChalDal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="productName">
+        <item>item1</item>
+    </string-array>
+
+    <string-array name="productQuntity">
+        <item>50ps</item>
+        <item>60ps</item>>
+
+    </string-array>
+
+    <string-array name="productPrices">
+        <item>50ps</item>
+    </string-array>
+
+
+    <string-array name="productDetaisl">
+        <item>sdfsdfsdfasdfsadffsadfsafdsdafsadf</item>
+        <item>sdfsafdasfdasfdsadfsafdsadfsdfsafsfd </item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_search">String</string>
+
+</resources>
