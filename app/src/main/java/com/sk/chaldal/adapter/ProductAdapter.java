@@ -2,7 +2,6 @@ package com.sk.chaldal.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Paint;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -80,7 +79,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
 
             tv_productName = itemView.findViewById(R.id.tv_productName);
             tv_productPrice = itemView.findViewById(R.id.tv_productPrice);
-            tv_productPrice2 = itemView.findViewById(R.id.tv_productPrice2);
+         //   tv_productPrice2 = itemView.findViewById(R.id.tv_productPrice2);
+            tv_productPrice2=itemView.findViewById(R.id.tv_productPrice2);
             tv_productQuantity = itemView.findViewById(R.id.tv_productQuantity);
             tv_productCounter = itemView.findViewById(R.id.tv_productCounter);
 
@@ -104,7 +104,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
             i.putExtra("image",String.valueOf(productArrayList.get(getAdapterPosition()).getImage()));
             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.getApplicationContext().startActivity(i);
-            tv_productPrice2.setPaintFlags( tv_productPrice2.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
+           // tv_productPrice2.setPaintFlags( tv_productPrice2.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
         }
 
     }

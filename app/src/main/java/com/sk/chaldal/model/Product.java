@@ -8,16 +8,27 @@ public class Product {
     private String name;
     private String quantiy;
     private String prices;
+    private String prices2;
     private int image;
     private int total = 0;
 
     public Product() {
     }
 
-    public Product(String name, String quantiy, String prices, int image) {
+    public String getPrices2() {
+        return prices2;
+    }
+
+    public void setPrices2(String prices2) {
+        this.prices2 = prices2;
+    }
+
+    public Product(String name, String quantiy, String prices, String prices2 , int image) {
         this.name = name;
         this.quantiy = quantiy;
         this.prices = prices;
+        this.prices2=prices2;
+
         this.image = image;
     }
 

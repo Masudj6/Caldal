@@ -28,19 +28,20 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="102dp"
+                android:layout_width="80dp"
                 android:layout_height="41dp"
-                app:srcCompat="@drawable/call"
+                app:srcCompat="@drawable/callus"
                 app:layout_constraintRight_toLeftOf="@+id/imageView4"
                 android:layout_marginRight="0dp"
-                tools:layout_editor_absoluteY="3dp"
-                tools:ignore="MissingConstraints" />
+                tools:layout_editor_absoluteY="10dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="126dp" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="102dp"
                 android:layout_height="41dp"
-                app:srcCompat="@drawable/cd"
+                app:srcCompat="@drawable/cat"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="3dp"
                 android:layout_marginRight="32dp"

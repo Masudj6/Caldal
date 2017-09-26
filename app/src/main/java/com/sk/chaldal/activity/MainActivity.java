@@ -1,6 +1,5 @@
 package com.sk.chaldal.activity;
 
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -139,15 +138,15 @@ public class MainActivity extends AppCompatActivity {
         HeaderDataModel headerDataModel = new HeaderDataModel();
         listHash = new HashMap<>();
 
-        headerDataModel = new HeaderDataModel("POPULAR",R.drawable.starr);
+        headerDataModel = new HeaderDataModel("POPULAR",R.drawable.tara);
         listDataHeader.add(headerDataModel);
         headerDataModel = new HeaderDataModel("FOOD",R.drawable.food);
         listDataHeader.add(headerDataModel);
-        headerDataModel = new HeaderDataModel("Home & cleaning",R.drawable.home);
+        headerDataModel = new HeaderDataModel("Home & cleaning",R.drawable.spary);
         listDataHeader.add(headerDataModel);
         headerDataModel = new HeaderDataModel("Office producrs",R.drawable.offfice);
         listDataHeader.add(headerDataModel);
-        headerDataModel = new HeaderDataModel("Baby Care",R.drawable.baby);
+        headerDataModel = new HeaderDataModel("Baby Care",R.drawable.toy);
         listDataHeader.add(headerDataModel);
         headerDataModel = new HeaderDataModel("Beauty & Health",R.drawable.beauty);
         listDataHeader.add(headerDataModel);
@@ -209,39 +208,39 @@ public class MainActivity extends AppCompatActivity {
     private void getData() {
         Log.e(TAG, "getData: in mainactivity called" );
         Product product = new Product();
-        product = new Product("sugar(This is sugar...", "12kg", "$441", R.drawable.suger);
+        product = new Product("sugar(This is sugar.it is very testy", "12kg","$34", "$441", R.drawable.suger);
         productArrayList.add(product);
-        product = new Product("moyda(It is moyda...", "12kg", "$442", R.drawable.a2);
+        product = new Product("moyda(It is moyda...", "12kg", "$34","$442", R.drawable.a2);
         productArrayList.add(product);
-        product = new Product("sugi(It is suji...", "12kg", "$443", R.drawable.suji);
+        product = new Product("sugi(It is suji...", "12kg","$34", "$443", R.drawable.suji);
         productArrayList.add(product);
-        product = new Product("Onion(This is onion", "12kg", "$444", R.drawable.onion);
+        product = new Product("Onion(This is onion", "12kg","$34", "$444", R.drawable.onion);
         productArrayList.add(product);
-        product = new Product("Toilet Tishu", "2kg", "$445", R.drawable.tisu);
-        productArrayList.add(product);
-
-        product = new Product();
-        product = new Product("sugar(This is sugar...", "12kg", "$441", R.drawable.suger);
-        productArrayList.add(product);
-        product = new Product("moyda(It is moyda...", "12kg", "$442", R.drawable.a2);
-        productArrayList.add(product);
-        product = new Product("sugi(It is suji...", "12kg", "$443", R.drawable.suji);
-        productArrayList.add(product);
-        product = new Product("Onion(This is onion", "12kg", "$444", R.drawable.onion);
-        productArrayList.add(product);
-        product = new Product("Toilet Tishu", "2kg", "$445", R.drawable.tisu);
+        product = new Product("Toilet Tishu", "2kg","$34", "$445", R.drawable.tisu);
         productArrayList.add(product);
 
-        product = new Product();
-        product = new Product("sugar(This is sugar...", "12kg", "$441", R.drawable.suger);
+       // product = new Product();
+        product = new Product("sugar(This is sugar...","$34", "12kg", "$441", R.drawable.suger);
         productArrayList.add(product);
-        product = new Product("moyda(It is moyda...", "12kg", "$442", R.drawable.a2);
+        product = new Product("moyda(It is moyda...", "$34","12kg", "$442", R.drawable.a2);
         productArrayList.add(product);
-        product = new Product("sugi(It is suji...", "12kg", "$443", R.drawable.suji);
+        product = new Product("sugi(It is suji...", "12kg","$34", "$443", R.drawable.suji);
         productArrayList.add(product);
-        product = new Product("Onion(This is onion", "12kg", "$444", R.drawable.onion);
+        product = new Product("Onion(This is onion", "12kg","$34", "$444", R.drawable.onion);
         productArrayList.add(product);
-        product = new Product("Toilet Tishu", "2kg", "$445", R.drawable.tisu);
+        product = new Product("Toilet Tishu", "2kg","$34", "$445", R.drawable.tisu);
+        productArrayList.add(product);
+
+      //  product = new Product();
+        product = new Product("sugar(This is sugar...", "12kg","$34", "$441", R.drawable.suger);
+        productArrayList.add(product);
+        product = new Product("moyda(It is moyda...", "12kg","$34", "$442", R.drawable.a2);
+        productArrayList.add(product);
+        product = new Product("sugi(It is suji...", "12kg", "$34","$443", R.drawable.suji);
+        productArrayList.add(product);
+        product = new Product("Onion(This is onion", "12kg", "$34","$444", R.drawable.onion);
+        productArrayList.add(product);
+        product = new Product("Toilet Tishu", "2kg", "$34","$445", R.drawable.tisu);
         productArrayList.add(product);
 
         Log.e(TAG, "getData: "+productArrayList.size()+" data available" );
@@ -250,21 +249,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void getFoodData(){
         Product product = new Product();
-        product = new Product("Cheaken Egg", "12", "$443", R.drawable.egg);
+        product = new Product("Cheaken Egg", "12","$34", "$443", R.drawable.egg);
         productArrayList.add(product);
-        product = new Product("Vim bar", "12", "$444", R.drawable.vim);
+        product = new Product("Vim bar", "12", "$34","$444", R.drawable.vim);
         productArrayList.add(product);
-        product = new Product("Moshur dal", "12", "$445", R.drawable.dal);
+        product = new Product("Moshur dal", "12","$34", "$445", R.drawable.dal);
         productArrayList.add(product);
 
     }
     private void getGrocieryData(){
         Product product = new Product();
-        product = new Product("Danish condest milk", "12", "$443", R.drawable.milk);
+        product = new Product("Danish condest milk", "12","$34", "$443", R.drawable.milk);
         productArrayList.add(product);
-        product = new Product("Miniket Rice ..", "12", "$444", R.drawable.ca);
+        product = new Product("Miniket Rice ..", "12","$34", "$444", R.drawable.ca);
         productArrayList.add(product);
-        product = new Product("Ispahani Mirjapur Tea Best Leaf", "12", "$445", R.drawable.j);
+        product = new Product("Ispahani Mirjapur Tea Best Leaf", "12", "$34","$445", R.drawable.j);
         productArrayList.add(product);
     }
 
