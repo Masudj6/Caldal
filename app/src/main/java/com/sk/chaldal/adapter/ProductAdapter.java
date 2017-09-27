@@ -49,6 +49,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         holder.tv_productName.setText(productArrayList.get(position).getName());
         holder.tv_productQuantity.setText(productArrayList.get(position).getQuantiy());
         holder.tv_productPrice.setText(productArrayList.get(position).getPrices());
+        holder.tv_productPrice2.setText(productArrayList.get(position).getPrices2());
+      //  holder.tv_des.setText(productArrayList.get(position).getDetailes());
         holder.iv_productImage.setImageResource(productArrayList.get(position).getImage());
         Log.e(TAG, "onBindViewHolder: ");
     }
@@ -62,6 +64,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         private TextView tv_productName;
         private TextView tv_productPrice;
         private TextView tv_productPrice2;
+        private TextView tv_des;
 
 
 
@@ -79,9 +82,9 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
 
             tv_productName = itemView.findViewById(R.id.tv_productName);
             tv_productPrice = itemView.findViewById(R.id.tv_productPrice);
-         //   tv_productPrice2 = itemView.findViewById(R.id.tv_productPrice2);
             tv_productPrice2=itemView.findViewById(R.id.tv_productPrice2);
             tv_productQuantity = itemView.findViewById(R.id.tv_productQuantity);
+           // tv_des=itemView.findViewById(R.id.tv_details);
             tv_productCounter = itemView.findViewById(R.id.tv_productCounter);
 
             iv_productImage = itemView.findViewById(R.id.iv_productImage);
@@ -99,11 +102,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
             Toast.makeText(context, "text", Toast.LENGTH_SHORT).show();
 //            Log.e(TAG, "onClickFrom_ProductAdapter: "+getAdapterPosition() );
             Intent i = new Intent(context, ProductDetails.class);
-            i.putExtra("details", productArrayList.get(getAdapterPosition()).getName());
-            i.putExtra("price", productArrayList.get(getAdapterPosition()).getPrices());
+            i.putExtra("name", productArrayList.get(getAdapterPosition()).getName());
+            i.putExtra("des", productArrayList.get(getAdapterPosition()).getDetailes());
+            i.putExtra("cPrice", productArrayList.get(getAdapterPosition()).getPrices());
+            i.putExtra("oPrice", productArrayList.get(getAdapterPosition()).getPrices2());
             i.putExtra("image",String.valueOf(productArrayList.get(getAdapterPosition()).getImage()));
             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.getApplicationContext().startActivity(i);
+            context.startActivity(i);
            // tv_productPrice2.setPaintFlags( tv_productPrice2.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
         }
 

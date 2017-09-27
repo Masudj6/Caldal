@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sk.chaldal">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".activity.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,12 +21,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ProductDetails" />
-        <activity android:name=".activity.Air" />
         <activity
-            android:name=".model.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ProductDetails"
+            android:label="Details"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sk.chaldal.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Mobile_Login_Activity"
+            android:label="@string/title_activity_mobile__login_" />
+        <activity android:name=".Login_Activity.Mobile_Login_Activity"></activity>
     </application>
 
 </manifest>

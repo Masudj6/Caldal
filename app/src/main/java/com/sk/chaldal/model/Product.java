@@ -10,10 +10,30 @@ public class Product {
     private String prices;
     private String prices2;
     private int image;
+    private String detailes;
     private int total = 0;
 
     public Product() {
     }
+
+    public Product(String name, String quantiy, String prices, String prices2, int image) {
+        this.name = name;
+        this.quantiy = quantiy;
+        this.prices = prices;
+        this.prices2 = prices2;
+        this.image = image;
+    }
+
+    public Product(String name, String quantiy, String prices,
+                   String prices2, int image, String detailes) {
+        this.name = name;
+        this.quantiy = quantiy;
+        this.prices = prices;
+        this.prices2 = prices2;
+        this.image = image;
+        this.detailes = detailes;
+    }
+
 
     public String getPrices2() {
         return prices2;
@@ -23,13 +43,13 @@ public class Product {
         this.prices2 = prices2;
     }
 
-    public Product(String name, String quantiy, String prices, String prices2 , int image) {
-        this.name = name;
-        this.quantiy = quantiy;
-        this.prices = prices;
-        this.prices2=prices2;
 
-        this.image = image;
+    public String getDetailes() {
+        return detailes;
+    }
+
+    public void setDetailes(String detailes) {
+        this.detailes = detailes;
     }
 
     public String getName() {
@@ -64,11 +84,11 @@ public class Product {
         this.image = image;
     }
 
-    public int add(int number){
-        return total = total +number;
+    public int add(int number) {
+        return total = total + number;
     }
 
-    public int sub(int number){
-        return total = total -number;
+    public int sub(int number) {
+        return total = total - number;
     }
 }

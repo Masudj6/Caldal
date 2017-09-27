@@ -7,12 +7,12 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.sk.chaldal.activity.MainActivity"
     tools:showIn="@layout/app_bar_main">
-    <FrameLayout
-        android:id="@+id/contaner"
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
+    <!--<FrameLayout-->
+        <!--android:id="@+id/contaners"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp">-->
 
-    </FrameLayout>
+    <!--</FrameLayout>-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_productList"

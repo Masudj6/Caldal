@@ -208,39 +208,122 @@ public class MainActivity extends AppCompatActivity {
     private void getData() {
         Log.e(TAG, "getData: in mainactivity called" );
         Product product = new Product();
-        product = new Product("sugar(This is sugar.it is very testy", "12kg","$34", "$441", R.drawable.suger);
+        Product product1=new Product("Sugar(This is sugar,hese  balance protein","12kg","$34", "$441", R.drawable.suger,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein, " +
+                "carbohydrates and fat for each meal. Then choose 1" +
+                " of each for mid-afternoon and pre-bedtime snacks.");
+        productArrayList.add(product1);
+        product = new Product("Sugar(This is sugarhese food blocks  balance protein", "12kg","$34", "$441", R.drawable.suger,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("moyda(It is moyda...", "12kg", "$34","$442", R.drawable.a2);
+        product = new Product("Moyda(This is sugar.hese food blocks  protein", "12kg", "$34","$442", R.drawable.a2,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("sugi(It is suji...", "12kg","$34", "$443", R.drawable.suji);
+        product = new Product("Sugi(It is suji.hese food blocks provide protein", "12kg","$34", "$443", R.drawable.suji,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("Onion(This is onion", "12kg","$34", "$444", R.drawable.onion);
+        product = new Product("Onion(hese food blocks provide te protein", "12kg","$34", "$444", R.drawable.onion,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("Toilet Tishu", "2kg","$34", "$445", R.drawable.tisu);
+        product = new Product("Toilet Tishu,hese food blocks provide the most ", "2kg","$34", "$445", R.drawable.tisu,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
+        productArrayList.add(product);
+
+
+
+        product = new Product("sugar(hese food blocks provide the most ", "12kg","$34", "$441", R.drawable.suger,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
+        productArrayList.add(product);
+        product = new Product("moyda(hese food blocks provide the most precise ", "12kg", "$34","$442", R.drawable.a2,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
+        productArrayList.add(product);
+        product = new Product("sugi(hese food blocks provide the most ", "12kg","$34", "$443", R.drawable.suji,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
+        productArrayList.add(product);
+        product = new Product("Onion(hese food blocks  to balance protein", "12kg","$34", "$444", R.drawable.onion,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
+        productArrayList.add(product);
+        product = new Product("Toilet Tishu,hese food blocks provide the most ", "2kg","$34", "$445", R.drawable.tisu,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
 
        // product = new Product();
-        product = new Product("sugar(This is sugar...","$34", "12kg", "$441", R.drawable.suger);
+        product = new Product("sugar(hese food blocks provide the most ","$34", "12kg", "$441", R.drawable.suger,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("moyda(It is moyda...", "$34","12kg", "$442", R.drawable.a2);
+        product = new Product("moyda(hese food blocks o balance protein", "$34","12kg", "$442", R.drawable.a2,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("sugi(It is suji...", "12kg","$34", "$443", R.drawable.suji);
+        product = new Product("sugi(hese food blocks provide the most ", "12kg","$34", "$443", R.drawable.suji,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("Onion(This is onion", "12kg","$34", "$444", R.drawable.onion);
+        product = new Product("Onion(hese food blocks provide  balance protein", "12kg","$34", "$444", R.drawable.onion);
         productArrayList.add(product);
-        product = new Product("Toilet Tishu", "2kg","$34", "$445", R.drawable.tisu);
+        product = new Product("Toilet Tishu,hese food blocks provide the most ", "2kg","$34", "$445", R.drawable.tisu,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
 
       //  product = new Product();
-        product = new Product("sugar(This is sugar...", "12kg","$34", "$441", R.drawable.suger);
+        product = new Product("sugar(hese food blocks provide the ", "12kg","$34", "$441", R.drawable.suger,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("moyda(It is moyda...", "12kg","$34", "$442", R.drawable.a2);
+        product = new Product("moyda(hese food blocks provide the most ", "12kg","$34", "$442", R.drawable.a2,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
         product = new Product("sugi(It is suji...", "12kg", "$34","$443", R.drawable.suji);
         productArrayList.add(product);
-        product = new Product("Onion(This is onion", "12kg", "$34","$444", R.drawable.onion);
+        product = new Product("Onion(hese food blocks provide the most ", "12kg", "$34","$444", R.drawable.onion);
         productArrayList.add(product);
-        product = new Product("Toilet Tishu", "2kg", "$34","$445", R.drawable.tisu);
+        product = new Product("Toilet Tishu.hese food blocks provide the most ", "2kg", "$34","$445", R.drawable.tisu);
         productArrayList.add(product);
 
         Log.e(TAG, "getData: "+productArrayList.size()+" data available" );
@@ -249,21 +332,41 @@ public class MainActivity extends AppCompatActivity {
 
     private void getFoodData(){
         Product product = new Product();
-        product = new Product("Cheaken Egg", "12","$34", "$443", R.drawable.egg);
+        product = new Product("Cheaken Egg.hese food blocks provide the most ", "12","$34", "$443", R.drawable.egg,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("Vim bar", "12", "$34","$444", R.drawable.vim);
+        product = new Product("Vim bar.hese food blocks provide the most ", "12", "$34","$444", R.drawable.vim,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("Moshur dal", "12","$34", "$445", R.drawable.dal);
+        product = new Product("Moshur dal.hese food blocks provide the most", "12","$34", "$445", R.drawable.dal,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
 
     }
     private void getGrocieryData(){
         Product product = new Product();
-        product = new Product("Danish condest milk", "12","$34", "$443", R.drawable.milk);
+        product = new Product("Danish condest milk.hese food blocks balance protein", "12","$34", "$443", R.drawable.milk,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("Miniket Rice ..", "12","$34", "$444", R.drawable.ca);
+        product = new Product("Miniket Rice.hese food blocks provide the most precise ", "12","$34", "$444", R.drawable.ca,"Most women should choose 3 selections of protein," +
+                " carbohydrates and fats for each meal. " +
+                "Most men should choose 4 selections of protein," +
+                " carbohydrates and fat for each meal." +
+                " Then choose 1 of each for mid-afternoon and pre-bedtime snacks");
         productArrayList.add(product);
-        product = new Product("Ispahani Mirjapur Tea Best Leaf", "12", "$34","$445", R.drawable.j);
+        product = new Product("Ispahani Mirjapur Tea Best Leaf.hese food blocks provide the most precise.", "12", "$34","$445", R.drawable.j);
         productArrayList.add(product);
     }
 

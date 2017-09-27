@@ -11,11 +11,10 @@
         android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="always"/>
     <item
-        android:id="@+id/bag"
+        android:id="@id/card1"
         android:orderInCategory="200"
         android:title="Search"
-        app:actionViewClass="android.support.v7.widget.SearchView"
-        android:icon="@drawable/bag"
+        android:icon="@drawable/thol"
         app:showAsAction="always"/>
 
 </menu>
