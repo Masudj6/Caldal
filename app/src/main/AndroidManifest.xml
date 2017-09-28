@@ -14,13 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activity.SplashActivity"></activity>
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
@@ -33,10 +27,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sk.chaldal.activity.MainActivity" />
         </activity>
-        <activity
-            android:name=".Mobile_Login_Activity"
-            android:label="@string/title_activity_mobile__login_" />
-        <activity android:name=".Login_Activity.Mobile_Login_Activity"></activity>
+        <activity android:name=".Login_Activity.Mobile_Login_Activity">
+
+        </activity>
+        <activity android:name=".Login_Activity.Sign_Up">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
