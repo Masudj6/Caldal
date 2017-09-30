@@ -1,5 +1,6 @@
 package com.sk.chaldal.Login_Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -32,11 +33,20 @@ public class Mobile_Login_Activity extends AppCompatActivity implements View.OnC
         otp= (Button) findViewById(R.id.otp);
 
         otp.setOnClickListener(this);
+        login_option.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.login_option:
+            /** Start a new Activity MyCards.java */
+            Intent intent = new Intent(this, Sign_Up.class);
+            this.startActivity(intent);
+            break;
+
+        }
 
     }
 }

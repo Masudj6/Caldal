@@ -6,12 +6,11 @@
     android:layout_height="@dimen/nav_header_height"
     android:background="#FFFFFF"
     android:gravity="bottom"
-
     android:orientation="horizontal"
     android:paddingBottom="20dp"
     android:paddingLeft="@dimen/activity_horizontal_margin"
+
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:onClick="loginfo"
     android:paddingTop="10dp"
 
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
@@ -61,16 +60,17 @@
         android:textColor="#7A7B7B"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_login"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
         android:layout_marginBottom="2dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="2dp"
         android:text="Login"
+        android:onClick="login"
         android:textColor="#A70000"
         android:textSize="15sp"
         app:layout_constraintRight_toRightOf="parent"
